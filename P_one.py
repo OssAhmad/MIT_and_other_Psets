@@ -1,12 +1,12 @@
 # Problem Set 4A
-# Name: <your name here>
-# Collaborators:
+# Name: Oss Ahmad 
+# Collaborators: No One 
 # Time Spent: 2:00
 
 def main():
-    _input = 'dada'
+    _input = input("Enter a string: ")
     print('Input:', _input)
-    #print('Expected Output:', ['abc', 'acb', 'bac', 'bca', 'cab', 'cba'])
+    #print('Expected Output:', ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']) # this is just a test line, but I didn't delete it for some reason :/ 
     print('Output:', get_permutations(_input))
 
 def find_permutations(S, L):
@@ -57,6 +57,7 @@ def get_permutations(sequence):
 if __name__ == '__main__':
 #   #EXAMPLE
     main()
-#    # Put three example test cases here (for your sanity, limit your inputs
+#      You can put example test cases here (for your sanity, limit your inputs
 #    to be three characters or fewer as you will have n! permutations for a 
-#    sequence of length n)
+#    sequence of length n) 
+#    Also the algortithm is far from refined and will take forever to give an answer for strings that have more than 10 charaters in them. 
