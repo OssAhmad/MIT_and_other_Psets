@@ -9,6 +9,13 @@ def main():
     #print('Expected Output:', ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']) # this is just a test line, but I didn't delete it for some reason :/ 
     print('Output:', get_permutations(_input))
 
+def del_replicas(L):
+    ll = []
+    for e in L:
+        if e not in ll:
+            ll.append(e)
+    return ll
+    
 def find_permutations(S, L):
     l = []
     for e in L:
@@ -17,13 +24,6 @@ def find_permutations(S, L):
             l.append(e[:i] + S + e[i:])
             i = i + 1
     return(l)
-
-def del_replicas(L):
-    ll = []
-    for e in L:
-        if e not in ll:
-            ll.append(e)
-    return ll
 
 def get_permutations(sequence):
     '''
