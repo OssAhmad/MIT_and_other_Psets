@@ -44,6 +44,9 @@ def get_permutations(sequence):
     Note: depending on your implementation, you may return the permutations in
     a different order than what is listed here.
     '''
+    
+    assert len(sequence) >= 1 
+    
     l = []
     if len(sequence) == 1:
         return list(sequence)
