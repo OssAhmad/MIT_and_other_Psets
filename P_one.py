@@ -4,10 +4,12 @@
 # Time Spent: 2:00
 
 def main():
-    _input = input("Enter a string: ")
+    _input = input("Enter any string: ")
     print('Input:', _input)
     #print('Expected Output:', ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']) # this is just a test line, but I didn't delete it for some reason :/ 
-    print('Output:', get_permutations(_input))
+    ll = get_permutations(_input)
+    length = len(ll) 
+    print('Output:', ll + '\n' + "The number of permutations is:", length)
 
 def del_replicas(L):
     ll = []
